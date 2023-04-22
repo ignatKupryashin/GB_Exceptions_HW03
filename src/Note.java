@@ -8,14 +8,6 @@ public class Note {
     private long phone;
     private String sex;
 
-    public Note(String lastName, String name, String patronymic, String birthday, int phone, String sex) {
-        this.lastName = lastName;
-        this.name = name;
-        this.patronymic = patronymic;
-        this.birthday = birthday;
-        this.phone = phone;
-        this.sex = sex;
-    }
 
     public Note(){
         this.lastName = null;
@@ -75,6 +67,10 @@ public class Note {
         this.sex = sex;
     }
 
+    /**
+     * Приводит все параметры в ввиде строки
+     * @return
+     */
     public String toString(){
         return String.format("<%s><%s><%s><%s><%d><%s>", this.lastName, this.name, this.patronymic, this.birthday, this.phone, this.sex);
     }

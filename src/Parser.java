@@ -19,6 +19,10 @@ public class Parser {
     }
 
 
+    /**
+     * Парсит данные из строки в Note
+     * @throws NoteLengthException
+     */
     public void parse() throws NoteLengthException{
         if (inputData.length != this.noteLength){
             throw new NoteLengthException("Введено некорректное колличество параметров", inputData.length, this.noteLength);
@@ -57,6 +61,10 @@ public class Parser {
         }
     }
 
+    /**
+     * Проверяет полноту заполнения Note
+     * @throws NoteLengthException
+     */
     private void checkTheNote() throws NoteLengthException{
         StringBuilder sb = new StringBuilder();
         if (currentNote.getPhone() == 0){

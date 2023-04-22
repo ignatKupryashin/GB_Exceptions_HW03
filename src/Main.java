@@ -31,22 +31,6 @@ public class Main {
         UI ui = new UI();
         ui.run();
 
-//        String data = "11.02.1991";
-//        System.out.println(checkDate(data));
-
-
-
     }
-
-//    public static boolean checkDate(String data){
-//        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-//        try {
-//            LocalDate.parse(data, format);
-//            return true;
-//        }
-//        catch (DateTimeParseException e){
-//            return false;
-//        }
-//    }
 
 }

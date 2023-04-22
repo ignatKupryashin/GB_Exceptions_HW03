@@ -20,6 +20,9 @@ public class UI {
         return scanner.nextLine();
     }
 
+    /**
+     * Запуск программы
+     */
     public void run()  {
         Parser parser = new Parser(getString());
         try {
